@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route99 Car Rentals</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cars.css">
 </head>
 <body>
-    <header>
+    <header class="navbar">
+        <div class="logo">Route99</div>
         <nav>
-            <div class="logo">
-                <h1>Route99</h1>
-            </div>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#cars">Our Cars</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#hero">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#contact">Contact</a>
+            
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="fullscreen-hero">
         <div class="hero-content">
-            <h2>Your Perfect Ride Awaits</h2>
-            <p>Affordable, reliable, and stylish cars available for rent. Book today!</p>
-            <a href="#cars" class="btn">View Cars</a>
+            <h1>Drive the Future</h1>
+            <p>Electric. Elegant. Efficient.</p>
+            <a href="#cars" class="btn">Explore Cars</a>
         </div>
     </section>
 
@@ -75,12 +72,13 @@
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
-    
 
-    <footer>
-        <p>&copy; 2025 Route99 Car Rentals | All rights reserved</p>
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+    <footer class="tesla-footer">
+        <p>&copy; 2025 Route99 Car Rentals • All rights reserved</p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="cars.js"></script>
 </body>
 </html>
